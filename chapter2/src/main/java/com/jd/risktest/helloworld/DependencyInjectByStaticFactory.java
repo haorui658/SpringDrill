@@ -1,7 +1,7 @@
 
-package cn.javass.spring.chapter2.helloworld;
+package com.jd.risktest.helloworld;
 
-import cn.javass.spring.chapter2.helloworld.HelloApi;
+import com.jd.risktest.helloworld.HelloApi;
 
 public class DependencyInjectByStaticFactory {
 	public static HelloApi newInstance(String message, int index) {

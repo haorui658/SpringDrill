@@ -1,4 +1,4 @@
-package cn.javass.spring.chapter2.helloworld;  
+package com.jd.risktest.helloworld;  
 
 public interface HelloApi {
 	public void sayHello();  

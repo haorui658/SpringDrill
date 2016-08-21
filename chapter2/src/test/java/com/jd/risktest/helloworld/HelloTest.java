@@ -1,9 +1,11 @@
-package cn.javass.spring.chapter2.helloworld;
+package com.jd.risktest.helloworld;
 
 import org.junit.Test;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.jd.risktest.helloworld.HelloApi;
 
 public class HelloTest {
 	@Test
