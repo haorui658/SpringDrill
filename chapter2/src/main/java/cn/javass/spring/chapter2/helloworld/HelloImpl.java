@@ -7,6 +7,9 @@ public class HelloImpl implements HelloApi {
 		this.index = index;
 	}
 
+	public HelloImpl() {
+	}
+
 	private String message;
 	private int index;
 

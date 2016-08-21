@@ -23,7 +23,12 @@ public class HelloTest {
 		HelloApi byName = beanFactory.getBean("byName", HelloApi.class);  
 		byName.sayHello(); 
 		
+		//获取工厂实例
 		HelloApi byNamefactory = beanFactory.getBean("byNameFactory", HelloApi.class);  
 		byNamefactory.sayHello(); 
+		
+		//获取根据参数名字依赖注入的Bean  
+		HelloApi byProperty = beanFactory.getBean("byProperty", HelloApi.class);  
+		byProperty.sayHello(); 
 	}
 }
