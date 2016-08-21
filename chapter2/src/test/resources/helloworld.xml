@@ -16,14 +16,13 @@ http://www.springframework.org/schema/context                http://www.springfr
 		<constructor-arg type="int" value="2" />
 	</bean>
 	<!-- 通过构造器参数名称方式依赖注入 -->
-<!-- 	<bean id="byName" class="cn.javass.spring.chapter2.helloworld.HelloImpl">
-		<constructor-arg name="message" value="Hello World! byName" />
+	<bean id="byName" class="cn.javass.spring.chapter2.helloworld.HelloImpl"> 
+		<constructor-arg name="message" value="Hello World! byName" /> <constructor-arg 
+		name="index" value="3" /> </bean> 
+	<bean id="byNameFactory"
+		class="cn.javass.spring.chapter2.helloworld.DependencyInjectByStaticFactory"
+		factory-method="newInstance">
+		<constructor-arg name="message" value="Hello World! By Factory" />
 		<constructor-arg name="index" value="3" />
 	</bean>
-	 -->
-	<bean id="byName"  
-class="cn.javass.spring.chapter2.helloworld..DependencyInjectByStaticFactory" factory-method="newInstance">  
-       <constructor-arg name="message" value="Hello World! By Factory"/>  
-       <constructor-arg name="index" value="3"/>  
-</bean> 
 </beans>  

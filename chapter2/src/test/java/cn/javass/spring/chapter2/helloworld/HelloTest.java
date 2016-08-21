@@ -22,5 +22,8 @@ public class HelloTest {
 		//获取根据参数名字依赖注入的Bean  
 		HelloApi byName = beanFactory.getBean("byName", HelloApi.class);  
 		byName.sayHello(); 
+		
+		HelloApi byNamefactory = beanFactory.getBean("byNameFactory", HelloApi.class);  
+		byNamefactory.sayHello(); 
 	}
 }
