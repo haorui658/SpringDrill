@@ -8,6 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.jd.risktest.helloworld.HelloApi;
 
 public class HelloTest {
+	
 	@Test
 	public void testHelloWorld() throws Exception {
 		ApplicationContext context = new ClassPathXmlApplicationContext("helloworld.xml");
@@ -32,5 +33,9 @@ public class HelloTest {
 		//获取根据参数名字依赖注入的Bean  
 		HelloApi byProperty = beanFactory.getBean("byProperty", HelloApi.class);  
 		byProperty.sayHello(); 
+		
+		//通过setter方式注入  
+	    HelloApi bean2 = beanFactory.getBean("bean2", HelloApi.class);  
+	    bean2.sayHello();  
 	}
 }

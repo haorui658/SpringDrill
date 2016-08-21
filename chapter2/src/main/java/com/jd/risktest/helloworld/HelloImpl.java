@@ -8,6 +8,7 @@ public class HelloImpl implements HelloApi {
 	}
 
 	public HelloImpl() {
+		this.message ="空构造参数";
 	}
 
 	private String message;
