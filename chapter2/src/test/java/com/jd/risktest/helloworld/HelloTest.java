@@ -11,7 +11,7 @@ public class HelloTest {
 	
 	@Test
 	public void testHelloWorld() throws Exception {
-		ApplicationContext context = new ClassPathXmlApplicationContext("helloworld.xml");
+		//ApplicationContext context = new ClassPathXmlApplicationContext("helloworld.xml");
 		//HelloApi helloApi = context.getBean("hello", HelloApi.class);
 		//helloApi.sayHello();
 
