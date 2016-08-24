@@ -1,7 +1,10 @@
 package com.jd.risktest.helloworld;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class HelloImpl implements HelloApi {
 
+	@Autowired
 	public HelloImpl(String message, int index) {
 		this.message = message;
 		this.index = index;
