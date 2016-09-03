@@ -2,7 +2,7 @@ package com.jd.risktest.helloworld;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class TestBean11 {
+public class TestAnnotationBean {
 
 	@Autowired //字段注入  
 	private String name;  
@@ -18,7 +18,7 @@ public class TestBean11 {
 	private String message;
 
 	@Autowired // 构造器注入
-	private TestBean11(String message) {
+	private TestAnnotationBean(String message) {
 		this.message = message;
 	}
 

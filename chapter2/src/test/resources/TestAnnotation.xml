@@ -6,10 +6,13 @@ http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
 http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+<context:property-placeholder location="classpath:SpringDrill.properties"/>
+	
 	<context:annotation-config />
-	<bean id="testBean11" class="com.jd.risktest.helloworld.TestBean11" />
+	<bean id="testBean11" class="com.jd.risktest.helloworld.TestAnnotationBean" />
 	<bean id="name" class="java.lang.String">
-		<constructor-arg index="0" value="My Name is CoCo" />
+		<constructor-arg index="0" value="${message}:My Name is CoCo" />
 	</bean>
 	<bean id="message" class="java.lang.String">
 		<constructor-arg index="0" value="hello world!" />
