@@ -2,9 +2,10 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:p="http://www.springframework.org/schema/p"
-	xsi:schemaLocation="  
-http://www.springframework.org/schema/beans        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
-http://www.springframework.org/schema/context                http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
 	<!-- 通过构造器参数索引方式依赖注入 -->
 	<bean id="byIndex" class="com.jd.risktest.helloworld.HelloImpl">
@@ -22,8 +23,6 @@ http://www.springframework.org/schema/context                http://www.springfr
 		<constructor-arg name="index" value="3" />
 	</bean>
 
-
-
 	<bean id="byNameFactory"
 		class="com.jd.risktest.helloworld.DependencyInjectByStaticFactory"
 		factory-method="newInstance">
@@ -39,7 +38,8 @@ http://www.springframework.org/schema/context                http://www.springfr
 	</bean>
 
 	<!-- 定义依赖Bean -->
-	<bean id="helloApi" class="com.jd.risktest.helloworld.HelloImpl" p:message="this is simple setter DI"/>
+	<bean id="helloApi" class="com.jd.risktest.helloworld.HelloImpl"
+		p:message="this is simple setter DI" />
 	<!-- 通过构造器注入 -->
 	<bean id="bean2" class="com.jd.risktest.helloworld.HelloApiDecorator">
 		<property name="helloApi">

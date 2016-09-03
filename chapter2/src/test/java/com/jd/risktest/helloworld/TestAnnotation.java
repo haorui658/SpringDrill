@@ -19,12 +19,19 @@ public class TestAnnotation {
 		System.out.println(testBean11.getMessage());
 		Assert.assertEquals("hello", testBean11.getMessage());
 	}
-	
+
 	@Test
 	public void testAutowiredForField() {
 
 		TestAnnotationBean testBean11 = ctx.getBean("testBean11", TestAnnotationBean.class);
 		System.out.println(testBean11.getName());
 		Assert.assertEquals("Hellofromproperties:My Name is CoCo", testBean11.getName());
+	}
+
+	@Test
+	public void testBeanAnnotation() {
+
+		BeanAnnotation ba = ctx.getBean("beanAnnotation",BeanAnnotation.class );
+		ba.sayHello("hello....");
 	}
 }
