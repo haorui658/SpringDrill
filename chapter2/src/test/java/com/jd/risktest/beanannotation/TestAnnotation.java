@@ -1,4 +1,4 @@
-package com.jd.risktest.helloworld;
+package com.jd.risktest.beanannotation;
 
 import org.junit.Assert;
 import org.junit.Test;

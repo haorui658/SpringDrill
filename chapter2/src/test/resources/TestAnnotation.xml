@@ -13,7 +13,7 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 	<context:component-scan base-package="com.jd.risktest"></context:component-scan>
 	<!-- <context:annotation-config /> -->
 
-	<bean id="testBean11" class="com.jd.risktest.helloworld.TestAnnotationBean" />
+	<bean id="testBean11" class="com.jd.risktest.beanannotation.TestAnnotationBean" />
 	<bean id="name" class="java.lang.String">
 		<constructor-arg index="0" value="${message}:My Name is CoCo" />
 	</bean>

@@ -1,4 +1,4 @@
-package com.jd.risktest.helloworld;
+package com.jd.risktest.beanannotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
