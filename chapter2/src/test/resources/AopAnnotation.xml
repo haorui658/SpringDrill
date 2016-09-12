@@ -8,17 +8,6 @@
            http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
 
-	<bean id="helloWorldService" class="com.jd.risktest.aoptest.HelloWorldService" />
-	
-	<bean id="aspect" class="com.jd.risktest.aoptest.HelloWorldAspect" />
-	<aop:config>
-		<aop:pointcut id="pointcut" expression="execution(* com.jd..*.*(..))" />
-		<aop:aspect ref="aspect">
-			<aop:before method="beforeAdvice" pointcut-ref="pointcut" />
-			<aop:after method="afterFinallyAdvice" pointcut-ref="pointcut" />
-		</aop:aspect>
-	</aop:config>
-
-
-</beans>  
-   
+	<bean id="helloWorldService" class="com.jd.risktest.aopannotation.HelloAopAnnotation" />
+	<aop:aspectj-autoproxy />
+</beans>
