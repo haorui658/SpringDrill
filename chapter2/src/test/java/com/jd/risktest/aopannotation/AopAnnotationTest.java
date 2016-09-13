@@ -12,7 +12,7 @@ public class AopAnnotationTest {
 	public void AnnotationTest(){
 		
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("AopAnnotation.xml");
-		HelloAopAnnotation helloworldService = ctx.getBean("helloWorldService", HelloAopAnnotation.class);
+		IHelloWorldService helloworldService = ctx.getBean("helloWorldService", IHelloWorldService.class);
 		helloworldService.sayHello();
 	}
 }

@@ -10,7 +10,7 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 	<context:property-placeholder location="classpath:SpringDrill.properties" />
 
 	<!--component-scan包含了annotation-config的全部功能，通常使用前者 -->
-	<context:component-scan base-package="com.jd.risktest"></context:component-scan>
+	<context:component-scan base-package="com.jd.risktest" />
 	<!-- <context:annotation-config /> -->
 
 	<bean id="testBean11" class="com.jd.risktest.beanannotation.TestAnnotationBean" />
